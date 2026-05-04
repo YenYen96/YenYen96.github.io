@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All data analyst projects covering dashboards, customer insights, and operational reporting.">
+    <title>All Projects | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="projects-page">
+    <div class="page-shell">
+        <header class="hero">
+            <nav class="topbar">
+                <a class="button button-secondary section-button" href="index.html">Back Home</a>
+                <div class="topbar-links">
+                    <a href="index.html#work">Featured Projects</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </nav>
+
+            <section class="hero-copy" id="all-projects">
+                <p class="eyebrow">All Projects</p>
+                <h1>Detailed project archive across BI dashboards and machine learning analysis.</h1>
+                <p class="page-intro">
+                    This page covers projects 4 to 6 with key highlights and full summaries.
+                </p>
+            </section>
+        </header>
+
+        <main>
+            <section class="section">
+                <div class="projects-layout">
+
+                    <article class="project-card">
+                        <a href="https://github.com/YenYen96/House-Price-Analysis-Prediction" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                            <img src="asset/project4.jpg" alt="House Price Analysis & Prediction">
+                        </a>
+                        <p class="project-tag">Project 04</p>
+                        <h3>House Price Analysis & Prediction | Python</h3>
+                        <ul class="project-points">
+                            <li>Compared Linear Regression and Random Forest on 21,613 housing transactions</li>
+                            <li>Best model reached R2 = 0.76 and RMSE around 176,783 USD</li>
+                            <li>Key drivers: living area, build quality, bathroom count</li>
+                        </ul>
+                        <details class="project-summary">
+                            <summary class="project-summary-toggle">More Detail</summary>
+                            <div class="project-summary-body">
+                                <p class="project-detail-line"><strong>Goal:</strong> Build a machine learning solution to predict housing prices and identify major value drivers.</p>
+                                <p class="project-detail-line"><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn.</p>
+                                <h4 class="project-detail-title">Implementation</h4>
+                                <ul class="project-points">
+                                    <li>Analyzed 21,613 housing transactions with features including price, living area, lot area, bedrooms, bathrooms, floors, and build year.</li>
+                                    <li>Cleaned missing/duplicate records, converted date fields, and created derived variables such as year, month, and house_age.</li>
+                                    <li>Performed EDA using histograms, count plots, box plots, correlation heatmaps, and time-based trend charts.</li>
+                                    <li>Detected outliers, especially in price, bedrooms, sqft_living, sqft_lot, and high-value segments.</li>
+                                    <li>Compared Linear Regression and Random Forest on both raw and outlier-handled datasets.</li>
+                                    <li>Evaluated models using R2 and RMSE metrics.</li>
+                                </ul>
+                                <h4 class="project-detail-title">Outcome</h4>
+                                <ul class="project-points">
+                                    <li>Random Forest performed better than Linear Regression, indicating non-linear relationships.</li>
+                                    <li>Best model (Random Forest with 200 trees after outlier handling) reached R2 = 0.76 and RMSE around 176,783 USD.</li>
+                                    <li>Linear Regression improved to R2 = 0.65 after outlier handling.</li>
+                                    <li>Most influential factors included living area, build quality, bathroom count, nearby living area, and above-ground area.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://github.com/YenYen96/Book-Product-Segmentation" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                            <img src="asset/project5.jpg" alt="Book Product Segmentation">
+                        </a>
+                        <p class="project-tag">Project 05</p>
+                        <h3>Book Product Segmentation from Web Data | Python</h3>
+                        <ul class="project-points">
+                            <li>Scraped 1,000 books across 50 categories using BeautifulSoup</li>
+                            <li>Applied K-Means (K=4) to segment products by price, rating, and stock</li>
+                            <li>Defined 4 clusters: value, low-performing, high-stock-risk, and premium books</li>
+                        </ul>
+                        <details class="project-summary">
+                            <summary class="project-summary-toggle">More Detail</summary>
+                            <div class="project-summary-body">
+                                <p class="project-detail-line"><strong>Goal:</strong> Collect and analyze e-commerce book data, then segment products to support pricing and inventory decisions.</p>
+                                <p class="project-detail-line"><strong>Tools:</strong> Python, Requests, BeautifulSoup, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, K-Means, PCA.</p>
+                                <h4 class="project-detail-title">Implementation</h4>
+                                <ul class="project-points">
+                                    <li>Scraped 1,000 products from Books to Scrape across 50 categories.</li>
+                                    <li>Extracted title, category, price, rating, stock status, stock quantity, description, URL, and image fields.</li>
+                                    <li>Converted text price to numeric format, parsed availability into stock quantity, and standardized column names.</li>
+                                    <li>Handled missing values, duplicates, and repeated price records.</li>
+                                    <li>Ran EDA for price/rating distribution, category volume, average metrics, and inventory trends by category.</li>
+                                    <li>Standardized key variables and used K-Means clustering with Elbow and Silhouette to select K = 4.</li>
+                                    <li>Visualized clusters with PCA and profiled average characteristics per segment.</li>
+                                </ul>
+                                <h4 class="project-detail-title">Outcome</h4>
+                                <ul class="project-points">
+                                    <li>Produced a clean dataset of 1,000 books, 50 categories, and total stock of 8,585 units.</li>
+                                    <li>Defined 4 business-oriented clusters: value books, low-performing books, high-stock-risk books, and premium books.</li>
+                                    <li>Highlighted frequent categories such as Default, Nonfiction, Fiction, Sequential Art, Fantasy, Romance, and Young Adult.</li>
+                                    <li>Suggested cluster-based pricing, stock control, promotion planning, and recommendation strategies.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://github.com/YenYen96/Salary-Prediction-Model" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                            <img src="asset/project6.jpg" alt="Salary Prediction">
+                        </a>
+                        <p class="project-tag">Project 06</p>
+                        <h3>Salary Prediction | Python</h3>
+                        <ul class="project-points">
+                            <li>Classification model on 32,500+ census records to predict income above 50K</li>
+                            <li>Tuned Random Forest reached Accuracy = 85.45% and ROC-AUC = 0.91</li>
+                            <li>Key income drivers: education, occupation, working hours, and capital gain</li>
+                        </ul>
+                        <details class="project-summary">
+                            <summary class="project-summary-toggle">More Detail</summary>
+                            <div class="project-summary-body">
+                                <p class="project-detail-line"><strong>Goal:</strong> Predict whether annual income is above 50K and analyze the most influential factors behind income level.</p>
+                                <p class="project-detail-line"><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, K-Means, PCA.</p>
+                                <h4 class="project-detail-title">Implementation</h4>
+                                <ul class="project-points">
+                                    <li>Cleaned and processed Adult Census Income data with over 32,500 records.</li>
+                                    <li>Standardized column names, converted "?" to null, removed duplicates, and created age-group and capital-gain/loss indicators.</li>
+                                    <li>Performed EDA for income relationships with age, working hours, education, occupation, nationality, and capital gain/loss.</li>
+                                    <li>Applied K-Means segmentation and PCA visualization for income-related profile exploration.</li>
+                                    <li>Built preprocessing pipeline with StandardScaler for numeric features and one-hot encoding for categorical features.</li>
+                                    <li>Trained Logistic Regression and Random Forest with GridSearchCV hyperparameter tuning.</li>
+                                    <li>Evaluated by Accuracy, Precision, Recall, F1-score, ROC-AUC, and PR-AUC.</li>
+                                </ul>
+                                <h4 class="project-detail-title">Outcome</h4>
+                                <ul class="project-points">
+                                    <li>Found class imbalance: income &lt;= 50K at about 75.9%, income &gt; 50K at about 24.1%.</li>
+                                    <li>Key factors for higher income included middle age, higher education, longer working hours, managerial/specialized occupations, and capital gain.</li>
+                                    <li>Tuned Logistic Regression reached ROC-AUC = 0.9139, Recall = 85.18%, and F1-score = 69.65%.</li>
+                                    <li>Tuned Random Forest reached Accuracy = 85.45%, Precision = 81.84%, and ROC-AUC = 0.9114.</li>
+                                    <li>Proposed model use for high-income lead targeting and potential income-based customer segmentation.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                </div>
+
+                <div class="section-actions">
+                    <a class="button button-primary section-button" href="index.html#contact">Let's Work Together</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

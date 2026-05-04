@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a data analyst focused on dashboards, business insights, and decision-ready reporting.">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <button class="cat-logo" id="cat-logo" type="button" aria-label="Play welcome message">🐱</button>
+            <nav class="topbar">
+                <div class="topbar-links">
+                    <a href="#work">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <section class="hero-grid" id="home">
+                <div class="hero-copy">
+                    <p class="eyebrow">Data Analyst / BI Analyst</p>
+                    <h1>Hello, I'm Dao Kim Yen <span class="wave-hand" aria-hidden="true">👋</span></h1>
+                    <p class="hero-text">
+                        I focus on data cleaning, KPI reporting, dashboard design, and trend analysis that helps teams understand performance and act with confidence.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#work">View Projects</a>
+                        <a class="button button-primary" href="asset/CV_DaoKimYen.pdf" download>Download CV</a>
+                        <a class="button button-primary" href="#contact">Contact Me</a>
+                        <!--<a class="button button-secondary" href="asset/CV_Tuan.pdf" download>Download CV</a>
+                        <a class="button button-tertiary" href="#contact">Contact Me</a>
+                        <a class="button button-primary" href="asset/CV_Tuan.pdf" download>Download CV</a> -->
+                    </div>
+
+                    <ul class="hero-metrics">
+                        <li>
+                            <strong>SQL</strong>
+                            <span>Querying, transformation, and reporting</span>
+                        </li>
+                        <li>
+                            <strong>BI</strong>
+                            <span>Power BI dashboards and KPI tracking</span>
+                        </li>
+                        <li>
+                            <strong>PY</strong>
+                            <span>Python workflows for cleaning and analysis</span>
+                        </li>
+                        <li>
+                            <strong>Excel</strong>
+                            <span>Spreadsheets, formulas, and reporting support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-photo-wrap">
+                        <img src="asset/KY.jpg" alt="Portrait of DKY">
+                    </div>
+                    <div class="hero-card-copy">
+                        <p class="hero-card-label">Current Focus</p>
+                        <p class="hero-card-title">Building simple, decision-ready analytics experiences with strong structure, useful metrics, and clear visual storytelling.</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="section" id="work">
+                <div class="section-heading">
+                    <p class="eyebrow">My Project</p>
+                    <h2 class="work-heading-subtitle">Portfolio work focused on business performance, customer behavior, and operational reporting</h2>
+                </div>
+
+                <img class="work-cat-image" src="asset/cat2.jpeg" alt="Cat typing on a laptop">
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <a href="https://drive.google.com/drive/u/0/folders/1yA1tzAfe2onfVHn7_rutXgk6dZRs2z1W" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                            <img src="asset/project1.jpg" alt="Sales Dashboard & Performance Analysis">
+                        </a>
+                        <p class="project-tag">Project 01</p>
+                        <h3>Sales Dashboard & Performance Analysis</h3>
+                        <p>Power BI dashboard tracking sales, KPIs, delivery performance, and YoY growth with DAX metrics and interactive views.</p>
+                        <details class="project-summary">
+                            <summary class="project-summary-toggle">More Detail</summary>
+                            <div class="project-summary-body">
+                                <p class="project-detail-line"><strong>Goal:</strong> Build a commercial performance dashboard to monitor revenue, orders, customers, shipping cost, delivery status, and customer satisfaction.</p>
+                                <p class="project-detail-line"><strong>Tools:</strong> Power BI, DAX, Excel/CSV data preparation.</p>
+                                <h4 class="project-detail-title">Implementation</h4>
+                                <ul class="project-points">
+                                    <li>Cleaned and standardized sales, orders, customers, products, payments, shipping, and review datasets.</li>
+                                    <li>Built a Power BI data model and configured relationships across key fact and dimension tables.</li>
+                                    <li>Created DAX measures such as Total Sales, Total Orders, Total Customers, AOV, Freight Ratio, YoY, and QoQ.</li>
+                                    <li>Designed dashboards by year/quarter/month, category, payment method, and delivery status.</li>
+                                    <li>Analyzed delivery time, freight cost, and customer rating relationships.</li>
+                                    <li>Added slicers and tooltips for flexible filtering by period, order status, shipping status, and product size group.</li>
+                                </ul>
+                                <h4 class="project-detail-title">Outcome</h4>
+                                <p>Delivered an end-to-end KPI view, identified strong growth in early 2018, highlighted late-order risk linked with low review scores, and showed freight cost at around 14% of payment value to support logistics optimization.</p>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://github.com/YenYen96/Bank-Customer-Churn-Prediction" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                            <img src="asset/project2.jpg" alt="Customer Churn Prediction">
+                        </a>
+                        <p class="project-tag">Project 02</p>
+                        <h3>Customer Churn Prediction</h3>
+                        <p>ML model using Random Forest & Logistic Regression with SMOTE to predict churn risk and identify key drivers.</p>
+                        <details class="project-summary">
+                            <summary class="project-summary-toggle">More Detail</summary>
+                            <div class="project-summary-body">
+                                <p class="project-detail-line"><strong>Goal:</strong> Predict churn probability for bank customers and prioritize retention campaigns for high-risk groups.</p>
+                                <p class="project-detail-line"><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Imbalanced-learn.</p>
+                                <h4 class="project-detail-title">Implementation</h4>
+                                <ul class="project-points">
+                                    <li>Prepared customer data with features such as credit score, geography, age, tenure, balance, product count, card status, and activity level.</li>
+                                    <li>Ran EDA to identify churn-related drivers, with notable effects from age, high balance, and low activity.</li>
+                                    <li>Built preprocessing steps including unnecessary-column removal, categorical encoding, and scaling.</li>
+                                    <li>Created train/test pipeline and trained Decision Tree, Random Forest, and Logistic Regression models.</li>
+                                    <li>Handled class imbalance using class weights, random oversampling, random undersampling, and SMOTE.</li>
+                                    <li>Evaluated with Accuracy, Precision, Recall, and F1-score; then tuned threshold to improve churn detection balance.</li>
+                                </ul>
+                                <h4 class="project-detail-title">Outcome</h4>
+                                <ul class="project-points">
+                                    <li>Identified high-risk segments, especially older and inactive customers with high account balances.</li>
+                                    <li>Threshold optimization improved Precision-Recall trade-off for business retention use cases.</li>
+                                    <li>Final Logistic Regression baseline reached approximately F1-score = 0.31 after threshold tuning.</li>
+                                    <li>Recommended focused customer-care actions for high-probability churn segments to reduce attrition cost.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://github.com/YenYen96/fraud-prediction-model" target="_blank" rel="noopener noreferrer" class="project-img-link">
+                            <img src="asset/project3.jpg" alt="E-commerce Fraud Detection">
+                        </a>
+                        <p class="project-tag">Project 03</p>
+                        <h3>E-commerce Fraud Detection</h3>
+                        <p>XGBoost model on 1.47M transactions to detect fraud in highly imbalanced data, simulating up to 84.4% loss reduction.</p>
+                        <details class="project-summary">
+                            <summary class="project-summary-toggle">More Detail</summary>
+                            <div class="project-summary-body">
+                                <p class="project-detail-line"><strong>Goal:</strong> Build a machine learning model to detect high-risk e-commerce transactions and support fraud investigation prioritization.</p>
+                                <p class="project-detail-line"><strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib/Seaborn, Scikit-learn, XGBoost.</p>
+                                <h4 class="project-detail-title">Implementation</h4>
+                                <ul class="project-points">
+                                    <li>Processed more than 1.47 million labeled transactions with significant class imbalance.</li>
+                                    <li>Performed EDA on amount, time, account age, and address behavior patterns.</li>
+                                    <li>Engineered features such as transaction amount log, account age, transaction hour, and billing/shipping mismatch.</li>
+                                    <li>Trained and compared Logistic Regression, Decision Tree, Random Forest, and XGBoost.</li>
+                                    <li>Applied imbalance handling techniques including class weight and random undersampling.</li>
+                                    <li>Evaluated model performance with Precision, Recall, F1-score, ROC-AUC, and PR-AUC.</li>
+                                </ul>
+                                <h4 class="project-detail-title">Outcome</h4>
+                                <ul class="project-points">
+                                    <li>Selected XGBoost with undersampling as the final model.</li>
+                                    <li>Final model reached PR-AUC = 0.378 and Recall = 68.8%, aligned with high-fraud-catch priority.</li>
+                                    <li>Detected major fraud signals: high-value orders, new accounts, and midnight transactions (00:00-05:00).</li>
+                                    <li>Business simulation suggested up to 84.4% reduction in potential fraud loss versus no model usage.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </article>
+                </div>
+
+                <div class="section-actions">
+                    <a class="button button-primary section-button" href="projects.html">View More</a>
+                </div>
+            </section>
+
+            <section class="section split-section" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>I use data to explain what is happening, why it matters, and where the next decision should go.</h2>
+                </div>
+
+                <div class="about-panel">
+                        <p class="about-panel-label">My Story</p>
+                        <p>
+                            I started out in accounting — surrounded by ledgers, balance sheets, and a lot of Excel formulas. Numbers were always my thing, but somewhere between the monthly closes and the financial reports, I realized what I really loved wasn't just <em>recording</em> the numbers. I wanted to <em>understand</em> them.
+                        </p>
+                        <p style="margin-top: 0.75rem;">
+                            That curiosity pulled me toward data analysis. I began learning SQL, Python, and Power BI on the side — and suddenly, everything clicked. The same instinct that made me good at accounting (spotting patterns, questioning anomalies, caring about accuracy) turned out to be exactly what data analysis is built on.
+                        </p>
+                        <p style="margin-top: 0.75rem;">
+                            Now I'm working toward making that shift official. My goal is to grow into a Data Analyst role where I can turn raw data into clear decisions — and bring a little accounting discipline along for the ride.
+                        </p>
+                        <div class="about-vibes" style="margin-top: 1rem;">
+                            <span class="vibe-chip">🧾 Accounting background</span>
+                            <span class="vibe-chip">📊 Aspiring Data Analyst</span>
+                            <span class="vibe-chip">🔍 Detail-oriented</span>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="section contact-section" id="contact">
+                <div class="contact-card">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Open to data analyst roles, dashboard projects, and reporting work.</h2>
+                    <div class="contact-list">
+                        <p><strong>Mail:</strong> daokimyen12@gmail.com</p>
+                        <p><strong>Phone:</strong> +84 938 821 296</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const catLogo = document.getElementById("cat-logo");
+        const preferredVoiceNames = [
+            "Samantha",
+            "Karen",
+            "Moira",
+            "Tessa",
+            "Ava",
+            "Allison",
+            "Serena",
+            "Google UK English Female",
+            "Microsoft Zira",
+        ];
+
+        function pickPreferredVoice() {
+            const voices = window.speechSynthesis.getVoices();
+
+            if (!voices.length) {
+                return null;
+            }
+
+            const namedVoice = voices.find((voice) =>
+                preferredVoiceNames.some((name) => voice.name.includes(name))
+            );
+
+            if (namedVoice) {
+                return namedVoice;
+            }
+
+            return voices.find((voice) => voice.lang.toLowerCase().startsWith("en")) || null;
+        }
+
+        if (catLogo && "speechSynthesis" in window) {
+            window.speechSynthesis.onvoiceschanged = pickPreferredVoice;
+
+            catLogo.addEventListener("click", () => {
+                window.speechSynthesis.cancel();
+
+                const message = new SpeechSynthesisUtterance("Ha... low. I'm Yen. Welcome to my portfolio.");
+                message.lang = "en-US";
+                message.rate = 0.88;
+                message.pitch = 1.22;
+
+                const preferredVoice = pickPreferredVoice();
+
+                if (preferredVoice) {
+                    message.voice = preferredVoice;
+                    message.lang = preferredVoice.lang;
+                }
+
+                window.speechSynthesis.speak(message);
+            });
+        }
+    </script>
+</body>
+</html>
